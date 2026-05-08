@@ -13,13 +13,13 @@ pip install pymongo
 import json
 from pymongo import MongoClient
 
-mongo_uri = "mongodb+srv://alexinfouse121:H8GiodDk5RzvT7E0@cluster0.t0e2n.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+mongo_uri = "mongodb+srv://<username>:<password>@<cluster>.mongodb.net/?retryWrites=true&w=majority&appName=<AppName>"
 database_name = "Project_puma_data"
 
 files_and_collections = {
-    "C:/Users/Alex Sunny/Downloads/1_puma_financial_health_metrics.json": "financial_health_metrics",
-    "C:/Users/Alex Sunny/Downloads/2_puma_race_and_ethnicity.json": "race_and_ethnicity",
-    "C:/Users/Alex Sunny/Downloads/SNAP+Meal+Gap+-+2020+data.json": "snap_meal_gap"
+    "C:/<file-path>/1_puma_financial_health_metrics.json": "financial_health_metrics",
+    "C:/<file-path>/2_puma_race_and_ethnicity.json": "race_and_ethnicity",
+    "C:/<file-path>/SNAP+Meal+Gap+-+2020+data.json": "snap_meal_gap"
 }
 
 # Connect to MongoDB
@@ -44,7 +44,7 @@ import pandas as pd
 from pymongo import MongoClient
 
 # MongoDB connection details
-mongo_uri = "mongodb+srv://alexinfouse121:H8GiodDk5RzvT7E0@cluster0.t0e2n.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+mongo_uri = "mongodb+srv://<username>:<password>@<cluster>.mongodb.net/?retryWrites=true&w=majority&appName=<AppName>"
 database_name = "Project_puma_data"
 
 # Connect to MongoDB
